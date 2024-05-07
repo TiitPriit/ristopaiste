@@ -1,5 +1,9 @@
 {
   "devDependencies": {
     "tailwindcss": "^3.4.3"
+  },
+  "dependencies": {
+    "i18next": "^23.11.3",
+    "i18next-browser-languagedetector": "^7.2.1"
   }
 }

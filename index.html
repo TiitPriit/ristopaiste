@@ -5,7 +5,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-white">    
-    <header class="fixed top-0 left-0 right-0 z-50 bg-white w-full">
+    <header class="fixed top-0 left-0 right-0 z-50 bg-gray-300 w-full">
         <div class="grid grid-cols-3 items-center py-4">
             <div class="ml-4">
                 <img class="h-14 w-14" src="/IMG/RPB Logo Black Text 2000 x 2000.png">
@@ -14,10 +14,10 @@
                 <a class="text-xl font-normal text-dark-grey-700 hover:text-dark-grey-900" href="javascript:void(0)">Risto Paiste Bänd</a>
             </div>
             <div class="flex justify-end gap-2 md:gap-8">
-                <button class="flex items-center text-sm font-bold text-gray-600 hover:text-black transition duration-300">
+                <button id="estonian-button" class="flex items-center text-sm font-bold text-gray-600 hover:text-black transition duration-300">
                     <img class="w-5 h-3 pr-1" src="/IMG/Flag_of_Estonia.svg.png" alt="">Est
                 </button>
-                <button class="flex items-center px-4 py-2 text-sm font-bold text-gray-600 hover:text-black transition duration-300">
+                <button id="english-button" class="flex items-center px-4 py-2 text-sm font-bold text-gray-600 hover:text-black transition duration-300">
                     <img class="w-5 h-3 pr-1" src="/IMG/English flag.png" alt="">Eng
                 </button>
             </div>
@@ -28,38 +28,38 @@
     </div>
     <div >
         <div class="flex justify-center">
-            <p class="text-4xl font-bold py-5" >About us</p>
+            <p id="paragraph-header" class="text-4xl font-bold py-5" ></p>
         </div>
         <div class="flex justify-center">
-            <p class="text-2xl md:text-4xl font-semibold text-center leading-relaxed py-5 px-10"> 
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut deleniti voluptas, repellendus voluptatibus earum ducimus quam, libero obcaecati ex distinctio vero excepturi nihil nostrum amet repudiandae ea unde commodi! Labore fugiat, at facilis, praesentium minima maiores quibusdam consequatur nulla voluptas inventore sapiente commodi dolores a eius porro voluptatum cumque architecto reiciendis et blanditiis illo nesciunt doloribus? Ullam, nemo assumenda omnis molestias nobis mollitia, magnam libero debitis laborum, et optio possimus. At ab distinctio saepe assumenda officiis illo labore sequi ea facilis deserunt nisi quibusdam maiores quae voluptas cupiditate adipisci ex libero vitae, nihil velit itaque quo ut quidem tenetur. Accusamus.
+            <p id="paragraph-text" class="text-2xl md:text-4xl font-semibold text-center leading-relaxed py-5 px-10"> 
+                
             </p>
         </div>
     </div>
     <div>
         <!-- Members Section -->
         <div class="flex justify-center">
-            <p class="text-4xl font-bold py-11" >Members</p>
+            <p id="members-header" class="text-4xl font-bold py-11" ></p>
         </div>
         
         <!-- First Row -->
         <div class="flex flex-wrap justify-around ">
             <div class="p-6 border rounded-lg m-2 md:m-0" style="width: 300px;">
-                <img src="member1.jpg" alt="Member 1" class="w-full h-64 object-cover mb-4">
-                <h2 class="text-xl font-bold text-center">Risto Paiste - põhivokaal</h2>
-                <p class="mt-2 text-center ">Alati särav ja rõõmsameelne artist, kes on olnud laulja alates noorukieast, rajades laulukarjääri nii solistina kui ka osaledes erinevates koorides ja kooliansamblites. Ta on võistelnud mitmetel lauluvõistlustel ja konkurssidel ning osalenud isegi tuntud telesaates "Eesti otsib Superstaari". Risto hääl on täis kirge ja emotsioone ning tema karismaatiline esinemisstiil võlub igas vanuses kuulajaid.</p>
+                <img src="" alt="Member 1" class="w-full h-64 object-cover mb-4">
+                <h2 class="text-xl font-bold text-center">Risto Paiste <p id="member1-header"></p></h2>
+                <p id="member1-bio" class="mt-2 text-center "></p>
                 <!-- Rest of the member card -->
             </div>
             <div class="p-6 border rounded-lg m-2 md:m-0" style="width: 300px;">
-                <img src="member2.jpg" alt="Member 2" class="w-full h-64 object-cover mb-4">
-                <h2 class="text-xl font-bold text-center">Richard Toomann - soolokitarr, vokaal</h2>
-                <p class="mt-2 text-center">Andekas muusik, kes on osav mitme instrumendi valdamises. Kuigi ta on õppinud klaverit ja noorpõlves mängis ka trumme, avastas ta lõpuks oma tõelise kutsumuse kitarrimaailmas. Richardi ennastunustav soolokitarrimäng ja mahe vokaal on toonud publiku ette meeldejäävaid esitusi nii suurtes kontserdisaalides kui ka intiimsematel lavadel. Tal on laialdaselt esinemiskogemusi, olles astunud üles koos Risto ja teiste solistidega üle Eesti.</p>
+                <img src="" alt="Member 2" class="w-full h-64 object-cover mb-4">
+                <h2 class="text-xl font-bold text-center">Richard Toomann <p id="member2-header"></p></h2>
+                <p id="member2-bio" class="mt-2 text-center "></p>
                 <!-- Rest of the member card -->
             </div>
             <div class="p-6 border rounded-lg m-2 md:m-0" style="width: 300px;">
-                <img src="member3.jpg" alt="Member 3" class="w-full h-64 object-cover mb-4">
-                <h2 class="text-xl font-bold text-center">Raul Kolk - saatekitarr</h2>
-                <p class="mt-2 text-center">Alati abivalmis ja usin noormees, kes on bändi üks alustalasid. Ta on meie soolokitarristi esimene õpetaja - mine tea, võib-olla ei oleks ka meie bändi sellisel kujul, kui Raul ei oleks Richardile nooruspõlves näpunäiteid jaganud. Bändi toetab ta kindlakäeliselt saatekitarri mänguga ja täiendab oma akordidega bändi kõlavärvi.</p>
+                <img src="" alt="Member 3" class="w-full h-64 object-cover mb-4">
+                <h2 class="text-xl font-bold text-center">Raul Kolk <p id="member3-header"></p></h2>
+                <p id="member3-bio" class="mt-2 text-center "></p>
                 <!-- Rest of the member card -->
             </div>
         </div>
@@ -67,22 +67,22 @@
         <!-- Second Row -->
         <div class="flex flex-wrap justify-around">
             <div class="p-6 border rounded-lg m-2 md:m-0" style="width: 300px;">
-                <img src="member4.jpg" alt="Member 4" class="w-full h-64 object-cover mb-4">
-                <h2 class="text-xl font-bold text-center">Ian Erik Pettersson - basskitarr</h2>
-                <p class="mt-2 text-center">Iirimaalt pärit mees, kelle tõi elu Saaremaale. Ian on püsivalt Eestis kanda kinnitanud ning loonud siin omale pere. Ta on noorukieast alates kitarri ja bassi mänginud ning pubimuusikuna erinevates ootamatutes olukordades esinenud. Ian on oskuslik muusik ning jagab oma kogemusi ka bändiõpetajana.</p>
+                <img src="" alt="Member 4" class="w-full h-64 object-cover mb-4">
+                <h2 class="text-xl font-bold text-center">Ian Erik Pettersson <p id="member4-header"></p></h2>
+                <p id="member4-bio" class="mt-2 text-center"></p>
                 <!-- Rest of the member card -->
             </div>
             <div class="p-6 border rounded-lg m-2 md:m-0" style="width: 300px;">
-                <img src="member5.jpg" alt="Member 5" class="w-full h-64 object-cover mb-4">
-                <h2 class="text-xl font-bold text-center">Tenno Lauri - trummid, vokaal</h2>
-                <p class="mt-2 text-center">Tenno mängib erinevates bändides trumme, samuti on õpetanud seda noortele koos bändiõppega. Ta on töötanud helitehnikuna ning püüab viia oma bände tehniliselt paremuse suunas. Noorena õppis samuti muid pille, kuid elu tõi ta trummide juurde. Tenno on bändi rütmialustala, kes lisaks trummide mängimisele toob esile oma taustavokaali oskused.</p>
+                <img src="" alt="Member 5" class="w-full h-64 object-cover mb-4">
+                <h2 class="text-xl font-bold text-center">Tenno Lauri <p id="member5-header"></p></h2>
+                <p id="member5-bio" class="mt-2 text-center"></p>
                 <!-- Rest of the member card -->
             </div>
         </div>
     </div>
     <!-- Google calender-->
-    <div class="w-full py-24 py-24 bg-gray-600 flex justify-center">
-        <iframe src="https://calendar.google.com/calendar/embed?src=g7urbic5jsbu8mdgdt6bbatb4s%40group.calendar.google.com&ctz=Europe%2FTallinn" style="border: 0" width="1200" height="800" frameborder="0" scrolling="no" ></iframe>
+    <div class="py-24 bg-gray-600 flex justify-center items-center overflow-hidden rounded-lg shadow-lg max-w-6xl mx-auto">
+        <iframe src="https://calendar.google.com/calendar/embed?src=g7urbic5jsbu8mdgdt6bbatb4s%40group.calendar.google.com&ctz=Europe%2FTallinn" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
     </div>
     <!-- Contact Section -->
     <div class="my-6">
@@ -149,5 +149,78 @@
             </form>
         </div>
     </div>
+    <div class="flex flex-col items-center pt-10">
+        <h2 id="featured-video" class="text-2xl font-bold mb-4"></h2>
+        <iframe style="width: 75%; height: 500px;" src="https://www.youtube.com/embed/ODDCLwRXxI8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <footer class="flex flex-col items-center bg-zinc-50 text-center text-surface dark:bg-gray-300 dark:text-white mt-10">
+  <div class="container pt-9">
+    <!-- Social media icons container -->
+    <div class="mb-6 flex justify-center space-x-2">
+      <a
+        href="#!"
+        type="button"
+        class="rounded-full bg-transparent p-3 font-medium uppercase leading-normal text-surface transition duration-150 ease-in-out hover:bg-neutral-100 focus:outline-none focus:ring-0 dark:text-white dark:hover:bg-secondary-900"
+        data-twe-ripple-init>
+        <span class="[&>svg]:h-5 [&>svg]:w-5">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 320 512">
+            <path
+              d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" />
+          </svg>
+        </span>
+      </a>
+      
+      <a
+        href="#!"
+        type="button"
+        class="rounded-full bg-transparent p-3 font-medium uppercase leading-normal text-surface transition duration-150 ease-in-out hover:bg-neutral-100 focus:outline-none focus:ring-0 dark:text-white dark:hover:bg-secondary-900"
+        data-twe-ripple-init>
+        <span class="mx-auto [&>svg]:h-5 [&>svg]:w-5">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 448 512">
+            <path
+              d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+          </svg>
+        </span>
+      </a>
+
+    <a
+        href="#!"
+        type="button"
+        class="rounded-full bg-transparent p-3 font-medium uppercase leading-normal text-surface transition duration-150 ease-in-out hover:bg-neutral-100 focus:outline-none focus:ring-0 dark:text-white dark:hover:bg-secondary-900"
+        data-twe-ripple-init>
+        <span class="mx-auto">
+            <img src="https://cdn.freebiesupply.com/logos/large/2x/soundcloud-1-logo-black-and-white.png" alt="SoundCloud Logo" width="28" height="28" class="pt-0.9">
+        </span>
+    </a>
+
+    <a
+        href="#!"
+        type="button"
+        class="rounded-full bg-transparent p-3 font-medium uppercase leading-normal text-surface transition duration-150 ease-in-out hover:bg-neutral-100 focus:outline-none focus:ring-0 dark:text-white dark:hover:bg-secondary-900"
+        data-twe-ripple-init>
+        <span class="mx-auto [&>svg]:h-5 [&>svg]:w-5">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M23.498 6.186a2.966 2.966 0 0 0-2.122-2.122C19.57 3.6 12 3.6 12 3.6s-7.57 0-9.376.464a2.966 2.966 0 0 0-2.122 2.122C0 8.016 0 12 0 12s0 3.984.502 5.814a2.966 2.966 0 0 0 2.122 2.122c1.806.464 9.376.464 9.376.464s7.57 0 9.376-.464a2.966 2.966 0 0 0 2.122-2.122C24 15.984 24 12 24 12s0-3.984-.502-5.814zM9.545 15.568V8.432l6.568 3.568-6.568 3.568z"/>
+            </svg>
+        </span>
+    </a>
+    </div>
+  </div>
+
+  <!--Copyright section-->
+<div class="w-full bg-gray-300 p-4 text-center text-black">
+    © 2024 Copyright:
+    <a href="https://tw-elements.com/" class="text-black">Risto Paiste Bänd</a>
+</div>
+</footer>
+<script src="https://unpkg.com/i18next@21.6.3/i18next.min.js"></script>
+<script src="https://unpkg.com/i18next-browser-languagedetector@6.1.2/i18nextBrowserLanguageDetector.min.js"></script>
+<script src="languageSwitch.js"></script>
 </body>
 </html>
