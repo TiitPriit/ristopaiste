@@ -33,6 +33,10 @@ document.getElementById('member5-header').textContent = "Trummid, vokaal";
 document.getElementById('member5-bio').textContent = "Tenno mängib erinevates bändides trumme, samuti on õpetanud seda noortele koos bändiõppega. Ta on töötanud helitehnikuna ning püüab viia oma bände tehniliselt paremuse suunas. Noorena õppis samuti muid pille, kuid elu tõi ta trummide juurde. Tenno on bändi rütmialustala, kes lisaks trummide mängimisele toob esile oma taustavokaali oskused.";
 document.getElementById('calender-header').textContent = "Vaata vabasi kuupäevi ja broneeri üritus!";
 document.getElementById('featured-video').textContent = "Esile tõstetud video";
+document.getElementById('form-header').textContent = "Broneerige meid";
+document.getElementById('form-text').textContent = "Kas teil on mõni suur idee? Võtke meiega ühendust. Meil ​​on hea meel teie ideest kuulda ja abi pakkuda.";
+
+
 
 
 
@@ -53,6 +57,9 @@ document.getElementById('estonian-button').addEventListener('click', function() 
     document.getElementById('member5-bio').textContent = "Tenno mängib erinevates bändides trumme, samuti on õpetanud seda noortele koos bändiõppega. Ta on töötanud helitehnikuna ning püüab viia oma bände tehniliselt paremuse suunas. Noorena õppis samuti muid pille, kuid elu tõi ta trummide juurde. Tenno on bändi rütmialustala, kes lisaks trummide mängimisele toob esile oma taustavokaali oskused.";
     document.getElementById('calender-header').textContent = "Vaata vabasi kuupäevi ja broneeri üritus!";
     document.getElementById('featured-video').textContent = "Esile tõstetud video";
+    document.getElementById('form-header').textContent = "Broneerige meid";
+    document.getElementById('form-text').textContent = "Kas teil on mõni suur idee? Võtke meiega ühendust. Meil ​​on hea meel teie ideest kuulda ja abi pakkuda.";
+
 });
 
 document.getElementById('english-button').addEventListener('click', function() {
@@ -69,8 +76,12 @@ document.getElementById('english-button').addEventListener('click', function() {
     document.getElementById('member4-bio').textContent = "A man from Ireland, whom life brought to Saaremaa. Ian has permanently established himself in Estonia and created a family here. He has been playing guitar and bass since he was a teenager and has performed as a pub musician in various unexpected situations. Ian is a skilled musician and also shares his experience as a band teacher.";
     document.getElementById('member5-header').textContent = "Drums, vocal";
     document.getElementById('member5-bio').textContent = "TTenno plays drums in various bands, and has also taught it to young people along with band lessons. He has worked as a sound technician and tries to lead his bands in the direction of technical excellence. He also studied other instruments when he was young, but life brought him to the drums. Tenno is the rhythm backbone of the band, who, in addition to playing drums, brings out his backing vocal skills.";
-    document.getElementById('calender-header').textContent = "Check available dates and book us!";
+    document.getElementById('calender-header').textContent = "Check available dates and book an event!";
     document.getElementById('featured-video').textContent = "Featured video";
+    document.getElementById('form-header').textContent = "Book us";
+    document.getElementById('form-text').textContent = "Have some big idea? Then reach out we'd love to hear about your idea and provide help.";
+
+
 
 });
 
