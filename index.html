@@ -30,8 +30,6 @@
     <div>
         <img class="lg:h-screen lg:w-full object-cover" src="/IMG/AK9A2528.jpg" alt="">
     </div>
-    <!-- Background IMG -->
-    <div class="bg-[url('/IMG/Background.jpeg')]">
          <!-- About Section -->
         <div>
             <div class="flex justify-center ">
@@ -89,7 +87,7 @@
         <!-- Google calender-->
         <div class="flex flex-col justify-center items-center">
             <p id="calender-header" class="text-4xl font-bold p-3 bg-white my-4 rounded-2xl" ></p>
-            <iframe src="https://calendar.google.com/calendar/embed?src=g7urbic5jsbu8mdgdt6bbatb4s%40group.calendar.google.com&ctz=Europe%2FTallinn" class="py-10" style="border: 0" width="1300" height="800" frameborder="0" scrolling="no"></iframe>
+            <iframe src="https://calendar.google.com/calendar/embed?src=g7urbic5jsbu8mdgdt6bbatb4s%40group.calendar.google.com&ctz=Europe%2FTallinn" class="py-10" style="border: 0" width="1300" height="800" frameborder="0" scrolling="no" showTitle="0"></iframe>
         </div>
         <!-- Contact Section -->
         <div class="my-6">
@@ -132,13 +130,36 @@
                     </div>
                 </div>
                 <!-- Contact Form -->
-                <form class="ml-auto space-y-4" action="/your-server-endpoint" method="POST">
-                    <input type='text' name='name' placeholder='Name' class="w-full rounded-md py-2.5 px-4 border text-sm outline-[#007bff]" />
-                    <input type='email' name='email' placeholder='Email' class="w-full rounded-md py-2.5 px-4 border text-sm outline-[#007bff]" />
-                    <input type='text' name='phone' placeholder='Phone number' class="w-full rounded-md py-2.5 px-4 border text-sm outline-[#007bff]" />
-                    <textarea name='message' placeholder='Message' rows="6" class="w-full rounded-md px-4 border text-sm pt-2.5 outline-[#007bff]"></textarea>
-                    <button type='submit' class="text-white bg-[#007bff] hover:bg-blue-600 font-semibold rounded-md text-sm px-4 py-2.5 w-full">Send</button>
-                </form>
+                <!-- Include EmailJS SDK -->
+<!-- Include EmailJS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+<script>
+    (function(){
+        emailjs.init("m_JdBE3lv-DxN-zXy"); // Replace with your EmailJS user ID
+    })();
+</script>
+
+<form id="myForm" class="ml-auto space-y-4">
+    <input type='text' name='name' placeholder='Name' class="w-full rounded-md py-2.5 px-4 border text-sm outline-[#007bff]" />
+    <input type='email' name='email' placeholder='Email' class="w-full rounded-md py-2.5 px-4 border text-sm outline-[#007bff]" />
+    <input type='text' name='phone' placeholder='Phone number' class="w-full rounded-md py-2.5 px-4 border text-sm outline-[#007bff]" />
+    <textarea name='message' placeholder='Message' rows="6" class="w-full rounded-md px-4 border text-sm pt-2.5 outline-[#007bff]"></textarea>
+    <button type='submit' class="text-white bg-[#007bff] hover:bg-blue-600 font-semibold rounded-md text-sm px-4 py-2.5 w-full">Send</button>
+</form>
+
+<script>
+    document.getElementById('myForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        // these IDs from the previous steps
+        emailjs.sendForm('service_t5saic3', 'template_i007vh1', this)
+            .then(function() {
+                console.log('SUCCESS!');
+            }, function(error) {
+                console.log('FAILED...', error);
+            });
+    });
+</script>
             </div>
         </div>
         <div class="flex flex-col items-center py-10">
